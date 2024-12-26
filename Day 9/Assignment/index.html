@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Include Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">
+          <i data-lucide="bar-chart-3"></i>
+          <span>Xintra</span>
+        </div>
+
+        <nav class="nav-menu">
+          <div class="nav-item active">Dashboard</div>
+          <div class="nav-item">Sales</div>
+          <div class="nav-item">Analytics</div>
+          <div class="nav-item">E-commerce</div>
+          <div class="nav-item">CRM</div>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <h1>Sales Dashboard</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Search anything here..." />
+          </div>
+          <div class="header-actions">
+            <div class="header-icon">
+              <i data-lucide="bell" size="20"></i>
+              <span class="notification-badge">3</span>
+            </div>
+            <div class="header-icon">
+              <i data-lucide="shopping-cart" size="20"></i>
+            </div>
+            <div class="header-icon">
+              <i data-lucide="settings" size="20"></i>
+            </div>
+            <div class="profile-section">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&h=80"
+                alt="Profile"
+                class="profile-image"
+              />
+              <div class="profile-info">
+                <div class="profile-name">John Doe</div>
+                <div class="profile-role">Admin</div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>Total Products</h3>
+            <div class="value">854</div>
+            <div class="trend up">Increased By 2.56%</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Users</h3>
+            <div class="value">31,876</div>
+            <div class="trend up">Increased By 0.34%</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Revenue</h3>
+            <div class="value">$34,241</div>
+            <div class="trend up">Increased By 7.66%</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Sales</h3>
+            <div class="value">1,76,586</div>
+            <div class="trend down">Decreased By 0.74%</div>
+          </div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Sales Overview</h3>
+              <select>
+                <option>Sort By</option>
+              </select>
+            </div>
+            <div class="chart-placeholder"></div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Order Statistics</h3>
+            </div>
+            <div class="total-orders">
+              <h4>TOTAL ORDERS</h4>
+              <div class="value">3,736</div>
+              <div class="trend up">0.57%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categories-section">
+          <div class="chart-header">
+            <h3>Top Selling Categories</h3>
+            <select>
+              <option>Sort By</option>
+            </select>
+          </div>
+
+          <div class="category-item">
+            <div class="category-info">
+              <div class="category-color blue"></div>
+              <span>Clothing</span>
+            </div>
+            <div class="category-stats">
+              <span>31,245</span>
+              <span>25% Gross</span>
+              <span class="percentage green">0.45%</span>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-info">
+              <div class="category-color purple"></div>
+              <span>Electronics</span>
+            </div>
+            <div class="category-stats">
+              <span>29,553</span>
+              <span>16% Gross</span>
+              <span class="percentage blue">0.27%</span>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-info">
+              <div class="category-color green"></div>
+              <span>Grocery</span>
+            </div>
+            <div class="category-stats">
+              <span>24,577</span>
+              <span>22% Gross</span>
+              <span class="percentage purple">0.63%</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

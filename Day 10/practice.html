@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+          alt="Facebook"
+          class="logo"
+        />
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search Facebook" />
+        </div>
+      </div>
+      <div class="nav-middle">
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-tv"></i></a>
+        <a href="#"><i class="fas fa-store"></i></a>
+        <a href="#"><i class="fas fa-users"></i></a>
+        <a href="#"><i class="fas fa-gamepad"></i></a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-user">
+          <img
+            src="https://via.placeholder.com/30"
+            alt="Profile"
+            class="user-pic"
+          />
+          <span>Your Name</span>
+        </div>
+        <div class="nav-icons">
+          <i class="fas fa-th"></i>
+          <i class="fab fa-facebook-messenger"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/30" alt="Profile" />
+          <span>Your Name</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-user-friends"></i>
+          <span>Friends</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-history"></i>
+          <span>Memories</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-users"></i>
+          <span>Groups</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-video"></i>
+          <span>Video</span>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-store"></i>
+          <span>Marketplace</span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="stories-container">
+          <div class="story create-story">
+            <div class="create-story-placeholder">+</div>
+            <p>Create story</p>
+          </div>
+          <!-- Add more story items here -->
+        </div>
+
+        <div class="create-post">
+          <div class="post-top">
+            <img src="https://via.placeholder.com/40" alt="Profile" />
+            <input type="text" placeholder="What's on your mind?" />
+          </div>
+          <div class="post-options">
+            <button><i class="fas fa-video"></i> Live video</button>
+            <button><i class="fas fa-images"></i> Photo/video</button>
+            <button><i class="far fa-smile"></i> Feeling/activity</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Sponsored</h4>
+        </div>
+        <div class="sidebar-title">
+          <h4>Friend requests</h4>
+          <a href="#">See all</a>
+        </div>
+        <div class="sidebar-title">
+          <h4>Contacts</h4>
+          <div class="contact-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
